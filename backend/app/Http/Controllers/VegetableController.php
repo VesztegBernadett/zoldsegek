@@ -21,7 +21,7 @@ class VegetableController extends Controller
 
         if (!is_null($name)) {
             $vegetables = $vegetables->filter(function ($value, $key) use($name){
-                return str_contains($value['name'],$name);
+                return str_contains(strtolower($value['name']),strtolower($name));
             });
         }
 
