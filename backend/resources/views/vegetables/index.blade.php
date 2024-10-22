@@ -4,7 +4,7 @@
 
 @section("content")
 <div class="container">
-    <h1>{{$title}}</h1>
+    <h1 class="text-center">{{$title}}</h1>
     <p>
         A zöldség kifejezés konyhatechnikai műszó. Definíciója nem tudományos igényű, nagyrészt önkényes és szubjektív. Komplexebb megközelítés a zöldségnövény vagy a zöldségféle kifejezés, ami nemcsak a felhasználásra, hanem a termesztésre és a rendszertani sajátosságokra is utalhat, pl. hagymafélék, burgonyafélék stb.
     </p>
@@ -21,7 +21,7 @@
         <div class="card col-12 col-md-4 col-lg-3">
             <img src="{{asset("img/{$vegetable['image']}")}}" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title text-center">{{$vegetable['name']}}</h5>
+                <h5 class="card-title text-center text-capitalize">{{$vegetable['name']}}</h5>
                 <p class="card-text">{{$vegetable['description']}}</p>
                 <a href="{{$url}}" class="btn btn-success text-light w-100 mx-auto">Részletek</a>
             </div>

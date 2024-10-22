@@ -35,7 +35,8 @@ class VegetableController extends Controller
         $vegetables = $this->loadVegetables();
         $vegetable = $vegetables[$id-1];
         return view("vegetables.show",[
-            "title"=>"{$vegetable['name']}"
+            "title"=>"{$vegetable['name']}",
+            "vegetable"=>$vegetable
         ]);
     }
 
